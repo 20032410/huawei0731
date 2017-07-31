@@ -9,4 +9,35 @@
 6. 华为产品定义社区
 	* 更好用户体验
 	* 下载app，加入华为企业用户提升圈
-	
+7. 上课时间9点-11点40
+	1点半到-4点半
+8. WLAN历史概述
+	* 无线局域网
+	* 1971，夏威夷，ALOHAnet
+	* IEEE，1970
+	* 2003， WiFi、3G、4G、蓝牙
+9. 无线网络分类
+	* 个人无线网，Wireless Personal Area Network
+	* 无线局域网，小于100米
+	* 无线城域网，<5Km
+	* 无线广域网,<15Km
+10. 无线传输技术：
+11. Wi-Fi是采用了802.11技术的WLAN
+	* 2.4G，5G频段，但中国主要用149-165信道
+	* 802.11 b/g/n，支持2.4GHz,下载一般7M/s
+	* 802.11 a,n,ac，下载一般10M/s
+	* 第一代WLAN： 11b
+	* 第二代： 11a/g
+	* 第三代WLAN: 与WiMAX融合，11n多射频模块，合路
+	* 可扩展性，mesh组网，无线传输，不需要通过有线来部署（问题，距离问题）WDS，无线桥接
+	* 移动公司部署的CMCC,CMCC-EDU,CMCC-WEB
+	* 运营模式，以租代卖
+
+### WLAN标准组织
+1. 国家无线电管理委员会认证(State Radio Regulatory Commission of the People's Republic of China)
+````
+室内放装,100mw
+室外，500mw
+````
+2. ETSI
+3. 
