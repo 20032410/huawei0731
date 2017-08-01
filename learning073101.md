@@ -178,6 +178,65 @@
 	* startup system-software 
 	* reboot
 	
+## 0801
+### 升级AP
+1. AP支持三种版本升级模式
+	* ac-mode
+	* ftp-mode
+	* sftp-mode
+2. 进入wlan视图模式为FTP模式
+3. 查看AP类型
+4. 配置FTP服务器
+5. 查询Ap的状态
+6. 重启AP（记住）
+7. 验证AP的版本
+
+### AC-mode
+1. 熟练度问题
+
+### WLAN拓扑介绍
+1. SSID （Service SetIdentifier）：表示无线网络标识，用来区分不同的无线网络
+2. AP支持多SSID
+3. BSS，一个AP和多个无线终端
+4. ESS，由一个或多个BSS组成
+5. Ad-hoc
+6. DS
+7. WDS，无线分布式系统，组成，信道必须一致，点到点，点到多点
+	* Root AP
+	* Leaf AP
+	* 点到点
+	* 点到多点
+	* 手拉手模式
+	* 背靠背
+	* 最大长度，Root、Middle、Leaf
+8. Mesh基本概念
+	* WMN，Portal节点
+	* MPP
+	* MP
+	* MAP
+
+### CAPWAP
+1. AP介绍
+2. 胖AP，FAT AP
+3. 廋AP, FIT AP
+	* 便捷性
+4. 保证10%--15%的覆盖范围
+	* 二层漫游，指的是同网段的漫游
+	* 三层漫游，指的是跨网段的漫游，将从原网段的AP出去
+5. CAPWAP（无线节点控制和配置协议）
+
+### WLAN转发模型
+1. 直接转发
+2. 隧道转发
+	* 针对数据
+	* 控制，udp，5246
+	* 数据，udp，5247
+3. 静态AP发现AC
+	* 静态，AP配置有预配置静态AC的IP列表
+	* 动态，二层广播，AP管理地址和AC原地址在相同网段
+	DHCP，option 43
+	DHCP，option 15 DNS
+	
 	
 	
 	
