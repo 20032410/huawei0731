@@ -297,6 +297,26 @@
 	* 创建AP组
 	* 配置AP上线
 	* 配置WLAN业务参数
+	* 全局地址池
+	* 接口地址池
+	* ip pool network 10.1.100.0 mask
+	* dns-list 1.1.1.1 2.2.2.2
+	* 三层 option 43 sub
+	* 认证方式
+	* 先ap不认证，看到ap的mac地址，再加组，ap-group 
+	* 再配安全模板，ssid模板，绑定到vap，直接转发forward,隧道tunnel
+	* 绑定模板到AP组
+
+***
+
+### 配置
+1. 先清除配置 reset saved configuration
+2. 升级AP--V2R7
+
+
+3005
+Admin@123
+
 	
-	
+
 	
