@@ -66,4 +66,119 @@
 3. 在中国，1到13信道被允许使用
 4. 一般把11Mbps定义为低速率，通常会被禁用掉
 习惯用1，6，11；2，7，12
-5. 5G，149，153，157，161，165
+5. 5G，149，153，157，161，165，使用非重叠频段，可以使用信道绑定
+````
+红外遥控，无线耳机，
+微波炉
+无线摄像头
+雷达，5G
+无绳电话
+医院（零漫游），从重叠的区域切换（估计几ms），合路馈线，或者智分，室内分路
+````
+
+### 华为WLAN产品介绍
+1. 锐捷，AP320，520、华三（电信），华为商企合作
+2. AC Access controller
+3. AP Acess point
+	* 胖AP+++无线路由器
+	* 廋AP---通过AC集中管理控制
+	* 云AC---
+4. 无线控制器，AC6005，AC6605，盒式
+	* 插卡式，业务板槽
+	* 轨交专用AP，支持存放视频
+	* 敏捷分布式AP，12台、24台，加一个交换机，48台
+	* 新一代11ac AP，室外AP，AP4030N
+	* 室外AP，外置天线（定向，全向）
+5. AC6005
+	* 1U
+	* 可管理AP：4-256个
+	* 适合小型企业
+	* 支持8PoE或4PoE
+	* 支持CLI、WEB和eSight管理，（网管软件）
+	* ESSID数量：1K
+6. AC6605
+	* 适合中小型企业
+7. ACU2
+	* S交换机，适配S127、97、77
+	* 最多可管理2048 AP
+8. X1E系列随板无线接入控制单板
+	* 大型企业
+9. WLAN AP产品命名规则
+	* MIMO，150Mbps *3=450， 目前醉倒4**4，
+10. 敏捷分布式AP
+11. AC应用场景
+	* AC对AP进行控制与管理：
+	* AC一般不直部，一般旁挂
+	* AC通过控制隧道进行AP，CAPWAP
+12. AP室内放装
+	* A中等面积的盲区覆盖或重要共用场景
+13. AP室外系统
+	* 操场、体育场、校园
+14. 网管系统eSight
+	* 要提供MID库
+15. POE简介
+	* IEEE 802.3af PoE标准，最大输出功率15.4W
+	* IEEE 802.3at PoE标准，最大输出功率30W
+	* PSE
+	* PSU
+	* PD
+	* PI
+	* 网线连ap时一般不超过80m
+16. 供电方式
+	* PoE供电
+	* 交流电源适配器
+	* PoE电源适配器供电，AMI
+### 华为VRP介绍
+1. 通用路由平台，Versatile Routing Platform
+	* 网络操作系统
+	* 支撑多种设备的软件平台
+	* 提供TCP/IP路由服务
+2. VRP演进
+	* VRP5，VRP8，需要加入commit
+	* console线
+	* putty
+	* 华为一般9600，国内有些是115200，右边3个勾，都取消
+	*配置命令
+3. 用户视图<>
+	*查看display,
+4. 系统视图system-view，[]
+5. 接口视图Ethernet 0/0/1[]
+6. WLAN视图-wlan-view][]
+7. tab键补全
+8. 错误信息
+9. 通过telnet登录设备
+	* 通过Console口登录AC6605
+	* 配置AC的名称
+	* 配置AC管理IP
+	* 配置AC的Telnet服务
+10. 配置
+	* sysname ACI
+	* ip address 10.10.10.10 255.255.255.0
+	* quit
+	* telnet server enable
+	* aaa 
+	* user-interface vty 0 4
+	* protocol inboud all
+	* authentication-mode aaa
+	* return
+	* display users
+	* display user-interface
+11. 通过SSH登录设备，
+	* Web
+	* 界面配置
+	* ssh client first-time enable,客户端到客户端
+	* stelnet 127.0.0.1
+12. 升级AC
+	* display version
+	* 3CDMon
+	* display device
+	* 也可以使用tftp，udp形式，Bootrom
+	* dir,ls
+	* mget,mput,
+	* startup system-software 
+	* reboot
+	
+	
+	
+	
+	
