@@ -234,10 +234,49 @@
 3. 静态AP发现AC
 	* 静态，AP配置有预配置静态AC的IP列表
 	* 动态，二层广播，AP管理地址和AC原地址在相同网段
-	DHCP，option 43
-	DHCP，option 15 DNS
-	
-	
-	
-	
+	DHCP，option 43，可将AC源地址配置进去
+	DHCP，option 15 DNS，告诉AP一个域名，如aaa.domain;DNS aaa.domain=ac.源地址
+	AC源地址，跟AP建立CAPWAP的地址（可手工指定）
+4. 认证
+	* no-auth，不认证
+	* mac-auth，mac认证
+	* sn-auth，序列号
+5. image data，看数据版本
+6. data check 数据检测，看数据是否一致
+7. keep alive 保活（维护、维持）数据通道
+8. echo request 维护控制信道
+9. 配置变更，ac下发配置
+10. run 保活数据
+
+### DHCP
+1.
+
+### WLAN 组网
+1. 二层组网
+2. 三层组网
+3. 直连式
+4. 旁挂式
+5. 敏捷分布Wi-Fi方案组网
+
+### 数据转发方式
+1. 直连式
+	* 直接转发 配置truck口，放行业务vlan
+	* 如果是access口，只支持隧道转发
+	* 旁挂式组网
+
+### 管理VLAN
+
+### 业务VLAN
+1. 用户VLAN，基于用户去区分
+2. 
+
+***
+### WLAN配置
+1. WLAN数据规划表
+	* AP 地址池
+	* 用户地址池
+	* AC源地址，AC上任意接口上地址和AP管理地址互通
+	* AP上线，ssid，ssid模板，安全模板，域管理模板（国家码CN）
+	* VAP模板：ssid，安全，业务vlan，转发模式，与ap绑定，ap组
+	* 用户上网
 	
